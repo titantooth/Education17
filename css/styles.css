@@ -243,6 +243,239 @@ section {
   color: var(--light-white);
 }
 
+.heading {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--white);
+}
+
+.heading span {
+  color: var(--green);
+}
+
+.courses .slide {
+  width: 30rem;
+  background-color: var(--light-bg);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+.courses .slide img {
+  height: 25rem;
+  width: 100%;
+}
+
+.courses .slide h3 {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  color: var(--white);
+}
+.courses .slide p {
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--white);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--green);
+}
+
+.teachers .slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.teachers .slide img {
+  height: 35rem;
+  width: 30rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.teachers .slide h3 {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.teachers .slide .share {
+  position: absolute;
+  top: 1rem;
+  left: -6rem;
+}
+
+.teachers .slide:hover .share {
+  left: 2rem;
+}
+
+.teachers .slide .share a {
+  display: block;
+  margin-top: 1rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  color: var(--black);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.teachers .slide .share a:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.reviews-slider .slide {
+  width: 35rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.reviews-slider .slide p {
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+
+.reviews-slider .slide .user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.reviews-slider .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.reviews-slider .slide .user h3 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.reviews-slider .slide .user .stars i {
+  font-size: 1.5rem;
+  color: var(--green);
+}
+
+.contact .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact .row .image {
+  flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+  width: 100%;
+}
+
+.contact .row form {
+  flex: 1 1 40rem;
+  text-align: right;
+}
+
+.contact .row form .box {
+  text-align: right;
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.contact .row form span {
+  font-size: 1.4rem;
+  color: var(--light-white);
+}
+
+.contact .row form .radio {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact .row form .radio label {
+  font-size: 1.4rem;
+  color: var(--light-white);
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.contact .row form .radio #female {
+  margin-left: 2rem;
+}
+
+.contact .row form .radio input {
+  appearance: none;
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--light-white);
+  cursor: pointer;
+}
+
+.contact .row form .radio input:checked {
+  background-color: var(--green);
+  border-radius: 5rem;
+}
+
+.contact .row form .radio #female:checked ~ label[for="female"] {
+  color: var(--green);
+}
+
+.contact .row form .radio #male:checked ~ label[for="male"] {
+  color: var(--green);
+}
+
+.footer {
+  background-color: var(--light-bg);
+  text-align: center;
+}
+
+.footer .share a {
+  margin: 0 0.3rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.footer .share a:hover {
+  background-color: var(--green);
+}
+.footer .credit {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  padding-top: 2.5rem;
+
+  border-top: 0.1rem solic var(--light-white);
+  font-size: 2rem;
+  color: var(--light-white);
+}
+.footer .credit span {
+  color: var(--green);
+}
+
 /* media responsive below here */
 
 @media (max-width: 991px) {
@@ -288,5 +521,13 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .home .row .content h3 {
+    font-size: 5rem;
+  }
+
+  .heading {
+    font-size: 3rem;
   }
 }
